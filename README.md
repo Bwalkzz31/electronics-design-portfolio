@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="./assets/banner.svg" alt="Electronics Design Portfolio Banner" width="100%">
 </p>
