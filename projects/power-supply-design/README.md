@@ -21,3 +21,5 @@ The design was subjected to a **Transient Analysis** to verify start-up time and
 - **Buck Converter:** [Insert Part Number, e.g., LM2596]
 - **LDO Regulator:** [Insert Part Number, e.g., AMS1117]
 - **Inductor:** 33µH High-Current Shielded
+
+[⬅ Back to Main Portfolio](../../README.md)
