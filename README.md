@@ -1,15 +1,14 @@
-# ⚡ Electronics Design & Simulation Portfolio
 <p align="center">
   <img src="assets/banner.svg" alt="Electronics Portfolio Banner" width="100%">
 </p>
 
-📍 Focused on entry-level and contract opportunities in Electronics Design & Simulation (EDA)
+# ⚡ Electronics Design & Simulation Portfolio
+
+Focused on entry-level and contract opportunities in **Electronics Design & Simulation (EDA)**.
 
 Hands-on portfolio demonstrating practical experience in **circuit design, PCB development, and simulation-driven validation** using industry-standard tools.
 
-This work reflects a practical understanding of circuit behavior, simulation-driven validation, and PCB design workflows aligned with real-world electronics development.
-
-Focused on building **reliable, production-oriented electronic systems** with an emphasis on performance, stability, and verification under real-world conditions.
+This work reflects a strong understanding of **circuit behavior, performance validation, and engineering workflows** aligned with real-world electronics development.
 
 ---
 
@@ -20,11 +19,26 @@ Focused on building **reliable, production-oriented electronic systems** with an
 **Focus:** Circuit Design • Simulation • Power Integrity • Validation  
 
 ### Key Results
-- Maintained **5V output within 4.95V – 5.05V**
-- Maintained **3.3V output within 3.25V – 3.35V**
-- Achieved low ripple (**20mV – 50mV**) under load
-- Transient recovery time **< 2ms** during step changes
-- Stable operation across **0mA – 500mA load range**
+
+- Maintained 5V output within **4.95V – 5.05V**
+- Maintained 3.3V output within **3.25V – 3.35V**
+- Achieved low ripple between **20mV – 50mV** under load
+- Transient recovery time **< 2ms** during step-load changes
+- Stable operation across **0mA – 500mA** load range
+
+---
+
+## 📸 Design & Simulation Preview
+
+> Representative outputs from schematic design and SPICE-based validation.  
+> Images will be added as the project progresses.
+
+<!--
+<p align="center">
+  <img src="projects/power-supply-design/images/schematic.png" alt="Power Supply Schematic" width="48%">
+  <img src="projects/power-supply-design/images/simulation.png" alt="SPICE Simulation Output" width="48%">
+</p>
+-->
 
 ---
 
@@ -32,10 +46,10 @@ Focused on building **reliable, production-oriented electronic systems** with an
 
 This portfolio highlights applied experience in:
 
-- Power supply design and voltage regulation  
-- Analog signal processing and conditioning  
-- Circuit simulation and performance validation  
-- PCB layout and system-level design  
+- Power supply design and voltage regulation
+- Analog signal processing and conditioning
+- Circuit simulation and performance validation
+- PCB layout and system-level design
 
 All work follows a **simulation-first engineering approach**, validating circuit behavior across multiple operating conditions before implementation.
 
@@ -43,10 +57,10 @@ All work follows a **simulation-first engineering approach**, validating circuit
 
 ## 🛠 Tools & Technologies
 
-- **PCB Design:** KiCad  
-- **Simulation:** NGSpice, LTSpice  
-- **Analysis:** DC, AC, Transient simulations  
-- **Outputs:** Schematics, PCB layouts, simulation waveforms, BOMs  
+- **PCB Design:** KiCad
+- **Simulation:** NGSpice, LTSpice
+- **Analysis:** DC, AC, Transient simulations
+- **Outputs:** Schematics, PCB layouts, simulation waveforms, BOMs
 
 ---
 
@@ -56,21 +70,27 @@ All work follows a **simulation-first engineering approach**, validating circuit
 
 #### 📖 Description
 
-Designed and simulated a dual-output regulated power supply delivering stable **5V and 3.3V rails**.  
+Designed and simulated a dual-output regulated power supply delivering stable **5V and 3.3V rails**.
 
-The design prioritizes:
-- Voltage stability under varying loads  
-- Ripple minimization through filtering  
-- Reliable transient response  
+The system is designed to maintain voltage stability under varying load conditions while minimizing ripple through filtering, decoupling, and regulation techniques.
 
 ---
 
 #### ⚙️ Key Features
 
-- Dual regulated voltage rails (5V and 3.3V)  
-- Linear voltage regulation architecture  
-- Input filtering and decoupling for noise reduction  
-- Stable performance under dynamic load conditions  
+- Dual regulated voltage outputs: **5V and 3.3V**
+- Linear voltage regulation architecture
+- Input filtering and decoupling for noise reduction
+- Stable performance under dynamic load conditions
+
+---
+
+#### 🔍 Design Decisions
+
+- Selected linear regulation for simplicity, low noise, and predictable output behavior
+- Used filtering and decoupling capacitors to reduce ripple and improve voltage stability
+- Evaluated performance under multiple load conditions to confirm reliability
+- Prioritized stable transient response during step-load changes
 
 ---
 
@@ -78,9 +98,10 @@ The design prioritizes:
 
 SPICE-based simulation was used to evaluate:
 
-- Load regulation across operating ranges  
-- Output ripple under varying conditions  
-- Transient response during step load transitions  
+- Load regulation across operating range
+- Output ripple under varying load conditions
+- Transient response during step-load changes
+- Voltage stability across no-load, medium-load, and full-load scenarios
 
 ---
 
@@ -88,9 +109,9 @@ SPICE-based simulation was used to evaluate:
 
 Simulated across realistic load scenarios:
 
-- No load (0mA)  
-- Medium load (250mA)  
-- Full load (500mA)  
+- No load: **0mA**
+- Medium load: **250mA**
+- Full load: **500mA**
 
 Step-load transitions were applied to analyze system stability and recovery behavior.
 
@@ -98,139 +119,121 @@ Step-load transitions were applied to analyze system stability and recovery beha
 
 #### 📊 Performance Results
 
-- **5V Rail:** 4.95V – 5.05V  
-- **3.3V Rail:** 3.25V – 3.35V  
-- **Ripple Voltage:** 20mV – 50mV  
-- **Transient Response:** < 2ms recovery time  
-- **Load Stability:** Maintained across full load range  
+- **5V Rail:** 4.95V – 5.05V
+- **3.3V Rail:** 3.25V – 3.35V
+- **Ripple Voltage:** 20mV – 50mV
+- **Transient Response:** < 2ms recovery time
+- **Load Stability:** Maintained across full load range
 
 ---
 
-#### 📊 Visual Results
+#### ⚠️ Engineering Challenge
 
-![Schematic](images/schematic.png)
+Power supply designs must maintain stable output voltage even when load conditions change quickly.
 
-![Simulation](images/simulation.png)
-
----
-
-#### 📸 Project Artifacts
-
-- Schematic design (KiCad)  
-- PCB layout files  
-- Simulation waveforms (voltage vs. time)  
-- Bill of Materials (BOM)  
+Step-load behavior was reviewed to evaluate whether the output rails could recover quickly without excessive ripple or voltage deviation.
 
 ---
 
-#### 🧠 Engineering Insight
+#### ✅ Solution
 
-This project demonstrates a structured approach to **designing and validating stable power delivery systems**.
-
-Key engineering considerations included:
-- Minimizing ripple through filtering and decoupling  
-- Maintaining voltage regulation across load variation  
-- Ensuring fast and stable transient recovery  
-
-A simulation-driven workflow was used to reduce design risk and validate performance prior to implementation—reflecting real-world engineering practices.
+Filtering, decoupling, and regulation were used to improve stability and reduce ripple. Simulation results confirmed that the design maintained stable voltage output across tested load conditions.
 
 ---
 
-## 🎯 Why This Matters
+#### 📦 Project Artifacts
 
-Reliable power systems are fundamental to all electronic and embedded platforms.
-
-This work demonstrates the ability to:
-- Design with real-world constraints and variability in mind  
-- Validate system behavior through simulation  
-- Apply engineering principles to ensure performance and reliability  
-
-These skills directly translate to **electronics design, hardware validation, and AI-related system development workflows**.
+- Schematic design files
+- PCB layout structure
+- SPICE simulation notes
+- Simulation waveforms
+- Bill of Materials planning
+- Convergence and simulation troubleshooting guide
 
 ---
 
-## 🔬 Additional Project (In Progress)
+#### 💡 Engineering Insight
+
+This project demonstrates a structured approach to designing and validating stable power delivery systems.
+
+Key engineering considerations include:
+
+- Minimizing ripple through filtering and decoupling
+- Maintaining voltage regulation across load variation
+- Ensuring fast and stable transient response
+- Validating circuit behavior before physical implementation
+
+A simulation-driven workflow was used to reduce design risk and verify performance prior to implementation.
+
+---
+
+## 🔬 Additional Project Planned
 
 ### 📡 ADC Interface Board
 
 #### 📖 Description
 
-Designing an analog-to-digital interface to capture and process analog signals into digital data with high accuracy.
+Designing an analog-to-digital interface for accurate signal acquisition and digital conversion.
 
 ---
 
 #### 🎯 Objectives
 
-- Signal conditioning and filtering  
-- Noise reduction and stability  
-- Accurate sampling and data integrity  
+- Signal conditioning and filtering
+- Noise reduction and stability
+- Accurate sampling and data integrity
+- Reliable analog-to-digital signal conversion
 
 ---
 
 #### 🧪 Current Status
 
-- Schematic design in progress  
-- Component selection ongoing  
-- Simulation phase planned  
+- Schematic design planned
+- Component selection in progress
+- Simulation phase planned
 
 ---
 
 ## 🧠 Design Approach
 
-- **Schematic-First Design:** Define system architecture before implementation  
-- **Simulation-Driven Validation:** Verify performance prior to PCB layout  
-- **Performance-Focused Engineering:** Prioritize stability, efficiency, and reliability  
-- **Iterative Development:** Refine designs through testing and analysis  
+- **Schematic-First Design:** Define system architecture before implementation
+- **Simulation-Driven Validation:** Verify performance prior to PCB layout
+- **Performance-Focused Engineering:** Prioritize stability, efficiency, and reliability
+- **Iterative Development:** Refine designs through testing and analysis
+- **Documentation-Driven Workflow:** Maintain clear notes, outputs, and engineering decisions
 
 ---
 
 ## 📈 Progress
 
-- [x] Portfolio structure completed  
-- [x] Power supply schematic designed  
-- [x] Simulation analysis completed  
-- [ ] PCB layout finalization  
-- [ ] ADC interface design completion  
+- [x] Portfolio structure created
+- [x] Power supply project documented
+- [x] Simulation analysis documented
+- [x] Convergence and simulation guide added
+- [ ] Real schematic screenshot added
+- [ ] Real simulation waveform screenshot added
+- [ ] PCB layout finalization
+- [ ] ADC interface design completion
 
 ---
 
 ## 📂 Repository Structure
 
-```
-electronics-design-portfolio/
+```text
+electronics-design-simulation/
+│
+├── assets/
+│   ├── banner.svg
+│   ├── analog-chaos.jpg
+│   └── digital-sampling.jpg
 │
 ├── projects/
-│   ├── power-supply/
-│   │   ├── schematic/
-│   │   ├── pcb/
-│   │   ├── simulations/
-│   │   └── docs/
-│   │
-│   └── adc-interface/
-│       ├── schematic/
+│   └── power-supply-design/
+│       ├── schematics/
+│       ├── pcb/
 │       ├── simulations/
-│       └── docs/
+│       └── images/
 │
-├── images/
-│   ├── schematic.png
-│   ├── simulation.png
-│
+├── convergence-tips.md
 ├── README.md
 └── LICENSE
-```
-
----
-
-## 🤝 Opportunities
-
-Open to **contract, freelance, and entry-level roles** in:
-
-- Electronics design  
-- PCB layout  
-- Circuit simulation and validation  
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
