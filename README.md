@@ -1,4 +1,7 @@
 # ⚡ Electronics Design & Simulation Portfolio
+<p align="center">
+  <img src="assets/banner.svg" alt="Electronics Portfolio Banner" width="100%">
+</p>
 
 📍 Focused on entry-level and contract opportunities in Electronics Design & Simulation (EDA)
 
