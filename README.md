@@ -1,6 +1,10 @@
 # ⚡ Electronics Design & Simulation Portfolio
 
+📍 Focused on entry-level and contract opportunities in Electronics Design & Simulation (EDA)
+
 Hands-on portfolio demonstrating practical experience in **circuit design, PCB development, and simulation-driven validation** using industry-standard tools.
+
+This work reflects a practical understanding of circuit behavior, simulation-driven validation, and PCB design workflows aligned with real-world electronics development.
 
 Focused on building **reliable, production-oriented electronic systems** with an emphasis on performance, stability, and verification under real-world conditions.
 
@@ -99,14 +103,20 @@ Step-load transitions were applied to analyze system stability and recovery beha
 
 ---
 
+#### 📊 Visual Results
+
+![Schematic](images/schematic.png)
+
+![Simulation](images/simulation.png)
+
+---
+
 #### 📸 Project Artifacts
 
 - Schematic design (KiCad)  
 - PCB layout files  
 - Simulation waveforms (voltage vs. time)  
 - Bill of Materials (BOM)  
-
-> *(Add images to `/images` and link them here for maximum impact)*
 
 ---
 
@@ -200,8 +210,7 @@ electronics-design-portfolio/
 │
 ├── images/
 │   ├── schematic.png
-│   ├── pcb.png
-│   └── simulation.png
+│   ├── simulation.png
 │
 ├── README.md
 └── LICENSE
