@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banners/hero-water-circuit.jpg" alt="Water Crashing on Circuit — Electronics Design Portfolio" width="100%">
+  <img src="assets/banner.svg" alt="Water Crashing on Circuit — Electronics Design Portfolio" width="100%">
   <h1>⚡ ELECTRONICS DESIGN PORTFOLIO</h1>
   <p><strong>Where water meets wire — a master-level collection of EDA projects, simulations, and hardware designs</strong></p>
   <p>
@@ -17,14 +17,9 @@
 
 Every schematic is a controlled path through chaos. Every simulation is a prediction of how energy will flow. Every PCB layout is an attempt to tame the storm.
 
-<div align="center">
-  <img src="assets/images/water-circuit-macro.jpg" alt="Water on Circuit — Macro View" width="70%">
-</div>
-
 ---
 
 ## 🛠️ Tools & Stack
-
 
 
 | Domain | Primary Tools | Output Formats |
@@ -39,8 +34,8 @@ Every schematic is a controlled path through chaos. Every simulation is a predic
 
 ## 🔧 Featured Projects
 
-### 🌊 Power Supply Design (The Storm)
-<img src="assets/banners/analog-chaos.jpg" width="100%" alt="Analog Chaos - Power Supply">
+### 🌊 [Power Supply Design (The Storm)](projects/power-supply-design/)
+<img src="assets/analog-chaos.jpg" width="100%" alt="Analog Chaos - Power Supply">
 
 > **Focus: Stability Under Stress.** 
 > A robust 5V/3.3V dual-rail regulator designed to maintain rock-solid stability even when electrical "chaos" hits the traces.
@@ -49,8 +44,8 @@ Every schematic is a controlled path through chaos. Every simulation is a predic
 
 ---
 
-### 💧 ADC Interface Board (The Precision)
-<img src="assets/banners/digital-sampling.jpg" width="100%" alt="Digital Precision - ADC Interface">
+### 💧 [ADC Interface Board (The Precision)](projects/adc-interface-board/)
+<img src="assets/digital-sampling.jpg" width="100%" alt="Digital Precision - ADC Interface">
 
 > **Focus: Capturing the Drop.** 
 > A 16-bit SAR ADC breakout that captures fluid analog signals and quantizes them into precise digital data with zero "splash."
@@ -63,9 +58,7 @@ Every schematic is a controlled path through chaos. Every simulation is a predic
 
 ```text
 electronics-design-portfolio/
-├── assets/
-│   ├── banners/               # Hero and project visual assets
-│   └── images/                # Technical diagrams and board photos
+├── assets/                    # Project visual assets (banners, icons)
 ├── projects/
 │   ├── power-supply-design/   # Schematics, PCB, and SPICE decks
 │   ├── adc-interface-board/   # 16-bit SAR ADC files
@@ -104,11 +97,12 @@ electronics-design-portfolio/
   └─────────────┘     └──────────────┘     └─────────────┘
 ```
 
-1.  **Capture** — Schematic entry with proper symbol libraries.
-2.  **Generate** — Export SPICE netlist with model references.
-3.  **Simulate** — Run DC, AC, and transient analyses.
-4.  **Analyze** — Review waveforms and verify stability margins.
-5.  **Layout** — Proceed to PCB only after validation passes.
+1.  **Capture** — Draw the schematic in KiCad with proper symbol libraries and annotations.
+2.  **Generate** — Export the SPICE netlist with model references and sub-circuit definitions.
+3.  **Simulate** — Run DC, AC, and transient analyses in Ngspice or LTspice.
+4.  **Analyze** — Review waveforms, check margins, verify stability and bandwidth.
+5.  **Validate** — Confirm results meet specifications; iterate if needed.
+6.  **Layout** — Proceed to PCB layout only after simulation validation passes.
 
 ---
 
@@ -116,11 +110,11 @@ electronics-design-portfolio/
 
 - [x] Repository structure and branding established
 - [x] Hero banner and visual identity created
+- [x] Documentation — [Simulation Guide](convergence-tips.md) completed
 - [ ] Power Supply Design — Schematic capture
 - [ ] Power Supply Design — SPICE simulation suite
 - [ ] ADC Interface Board — Schematic and component selection
 - [ ] Mixed-Signal Filter — Topology selection and simulation
-- [ ] Documentation — Simulation guides and PCB guidelines
 
 ---
 
