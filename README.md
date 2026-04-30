@@ -35,7 +35,7 @@ Every schematic is a controlled path through chaos. Every simulation is a predic
 ## 🔧 Featured Projects
 
 ### 🌊 [Power Supply Design (The Storm)](projects/power-supply-design/)
-<img src="assets/analog-chaos.jpg" width="100%" alt="Analog Chaos - Power Supply">
+<img src="assets/analog-chaos.jpg" width="60%" alt="Analog Chaos - Power Supply">
 
 > **Focus: Stability Under Stress.** 
 > A robust 5V/3.3V dual-rail regulator designed to maintain rock-solid stability even when electrical "chaos" hits the traces.
@@ -45,7 +45,7 @@ Every schematic is a controlled path through chaos. Every simulation is a predic
 ---
 
 ### 💧 [ADC Interface Board (The Precision)](projects/adc-interface-board/)
-<img src="assets/digital-sampling.jpg" width="100%" alt="Digital Precision - ADC Interface">
+<img src="assets/digital-sampling.jpg" width="60%" alt="Digital Precision - ADC Interface">
 
 > **Focus: Capturing the Drop.** 
 > A 16-bit SAR ADC breakout that captures fluid analog signals and quantizes them into precise digital data with zero "splash."
