@@ -20,7 +20,7 @@ This design uses a **two-stage regulation approach**:
 1. **Buck Converter (Step-Down Switching Regulator)**
 
    * Converts 9–12V input to stable 5V output
-   * Designed for high efficiency under load
+   * Designed for improved efficiency under load
 
 2. **LDO Regulator (Low-Dropout Linear Regulator)**
 
@@ -40,16 +40,24 @@ This design uses a **two-stage regulation approach**:
 
 ## 🔬 Simulation Results (LTspice / Ngspice)
 
-The design was validated using **Transient Analysis** to evaluate startup behavior and load response.
+I simulated the circuit using **Transient Analysis** to evaluate startup behavior and load response.
 
 * **Startup Time:** < 5ms to steady state
-* **Load Step Response:**
 
-  * 0.5A → 1.5A transition
-  * Voltage sag: ~150mV
-  * Recovery time: ~200µs
+### Load Step Response:
 
-Results indicate stable regulation under dynamic load conditions.
+* 0.5A → 1.5A transition
+* Voltage sag: ~150mV
+* Recovery time: ~200µs
+
+---
+
+## 📈 Results Summary
+
+* Stable 5V output under dynamic load conditions
+* Fast transient recovery (~200µs)
+* Minimal voltage sag during load spikes (~150mV)
+* Clean 3.3V rail using LDO regulation
 
 ---
 
@@ -67,9 +75,9 @@ Results indicate stable regulation under dynamic load conditions.
 
 ## 📂 File Directory
 
-* `/schematics` → KiCad `.kicad_sch` files
-* `/pcb` → KiCad `.kicad_pcb` + Gerbers
-* `/simulation` → `.asc` SPICE simulations
+* `/schematics` → (Planned for KiCad schematic files)
+* `/pcb` → (Planned for PCB layout and Gerber files)
+* `/simulation` → `.asc` SPICE simulation files
 
 ---
 
@@ -84,7 +92,7 @@ Results indicate stable regulation under dynamic load conditions.
 
 ## ⚠️ Design Considerations
 
-* Switching regulator introduces minor ripple (mitigated via filtering)
+* Switching regulator introduces ripple (mitigated via filtering)
 * LDO used to ensure clean 3.3V output
 * Thermal performance depends on load conditions
 
@@ -92,7 +100,7 @@ Results indicate stable regulation under dynamic load conditions.
 
 ## 🚀 Future Improvements
 
-* PCB layout and routing in KiCad
+* PCB layout and routing using KiCad
 * Hardware prototype validation
 * Thermal analysis under full load
 * Efficiency optimization
