@@ -40,8 +40,7 @@ Simulation results confirm stable operation across tested conditions:
 
 ## 📸 Design & Simulation Preview
 
-![Power Supply Schematic and Transient Response](projects/power-supply-design/images/schematic.png)
-
+![Power Supply Schematic and Transient Response](schematic%20and%20transient%20response%20analysis.png)
 
 ---
 
